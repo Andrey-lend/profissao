@@ -19,3 +19,59 @@ h3 {
 h4{
     font-size: 140%;
 }
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: rgb(153, 0, 255);
+  font-family:'Public Sans', sans-serif;
+}
+
+.title {
+  margin: 0 auto;
+  color: white; 
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  animation: changeBackgroundImage 13s infinite;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url('https://picsum.photos/id/1015/1500/1000');
+  }
+  25% {
+    background-image: url('https://picsum.photos/id/1019/1500/1000');
+  }
+  50% {
+    background-image: url('https://picsum.photos/id/1016/1500/1000');
+  }
+  75% {
+    background-image: url('https://picsum.photos/id/1000/1500/1000');
+  }
+  100% {
+    background-image: url('https://picsum.photos/id/1015/1500/1000');
+  }
+}
+
+a{
+    color: rgb(153, 0, 255);
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
