@@ -1,0 +1,105 @@
+.tabela {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(153, 0, 255);
+    margin: 1em 0;
+    border: 3px solid #000000;
+    border-collapse: collapse;
+    font-size: 150%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 6px;
+    border-color: #000000;
+}
+table {
+    background-color: #000000;
+    color: rgb(153, 0, 255);
+    margin: 1em 0;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-collapse: collapse;
+    font-size: 100%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 6px;
+    border-color: rgb(255, 255, 255);
+}
+
+html {
+    color: rgb(153, 0, 255);
+    font-family:'Public Sans', sans-serif;
+}
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3AfRTY0m-BMd_AA_tW789ULfLDUvgiMLbQ&usqp=CAU);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+a{
+    color: rgb(153, 0, 255);
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+h1 {
+    text-align: center;
+    position: relative;
+    color: red;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 250%;
+}
+      
+h1:hover {
+    -o-transition-property: width,height,-o-transform,background,font-size,opacity;
+    -o-transition-duration: 1s,1s,1s,1s,1s,1s;
+    -moz-transition-property: width,height,-o-transform,background,font-size,opacity;
+    -moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+    transition-property: width,height,transform,background,font-size,opacity;
+    transition-duration: 1s,1s,1s,1s,1s,1s;
+    font-size: 350%;
+    text-align: center;
+}
+
+@keyframes example  {
+    0% {color: red;}
+    11% {color: orange;}
+    22% {color: yellow;}
+    33% {color: lime;}
+    44% {color: green;}
+    55% {color: cyan;}
+    66% {color: blue;}
+    77% {color: purple;}
+    88% {color: fuchsia;}
+    99% {color: red;}
+}
+
+p {
+    font-size: 140%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h4{
+    font-size: 140%;
+}
+
+li{
+    font-size: 140%; 
+}
+
+iframe{
+    width: 750px;
+    margin:0 auto;
+    display: block;
+}
