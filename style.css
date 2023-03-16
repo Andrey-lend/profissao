@@ -1,32 +1,57 @@
 h1 {
-    text-align: center;
-    position: relative;
-    color: red;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    font-size: 250%;
+  text-align: center;
+  position: relative;
+  color: red;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  font-size: 160%;
+  background-color:black;
+  color:purple;
+  margin-left:42%;
+  margin-right:42%;
+  padding: 40px;
 }
 
 p {
-    font-size: 140%;
+  background-color:black;
+  color:purple;
+  margin-left:10%;
+  margin-right:10%;
+  padding: 40px;
+  font-size: 140%;
 }
 
 h3 {
-    font-size: 150%;
+  background-color:black;
+  color:purple;
+  margin-left:42%;
+  margin-right:42%;
+  padding: 40px;
+  font-size: 150%;
 }
 
-h4{
-    font-size: 140%;
+h2{
+  background-color:black;
+  color:purple;
+  margin-left:42%;
+  margin-right:42%;
+  padding: 40px;
+  font-size: 140%;
 }
 
 html,
 body {
+  text-align:justify;
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat: no-repeat ;
   height: 100%;
   margin: 0;
   padding: 0;
   color: rgb(153, 0, 255);
   font-family:'Public Sans', sans-serif;
+  background-color: black;
 }
 
 .title {
@@ -48,9 +73,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-{
-    
-}
+
 @keyframes changeBackgroundImage {
   0% {
     background-image: url('https://j.gifs.com/y0PeQ5.gif');
@@ -62,7 +85,7 @@ body {
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cd94ad62307169.5a8c3bfb3c6aa.gif');
   }
   75% {
-    background-image: url('https://picsum.photos/id/1000/1500/1000');
+    background-image: url('https://i.pinimg.com/originals/51/41/b8/5141b83a8f9fe66e0cb8ad88ee1d18b5.gif');
   }
   100% {
     background-image: url('https://picsum.photos/id/1015/1500/1000');
