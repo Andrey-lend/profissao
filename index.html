@@ -2,33 +2,46 @@
 <head>
     <title>Ciência da Computação</title>
     <link rel="stylesheet" href="style.css">
-    <script src="style.css"></script>
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		canvas {
+			display: block;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+	</style>
 </head>
 <body>
+
 <h1>Ciência da Computação</h1>
 
-    <p>
+    <p>A ciência da computação é um campo interdisciplinar que lida com o estudo teórico e prático da tecnologia da informação, incluindo design, desenvolvimento, implementação, análise e uso de sistemas de informação. É uma área fundamental que está em constante evolução e desempenha um papel importante em muitas áreas da vida moderna, incluindo o setor empresarial, entretenimento, ciência e medicina.
     <br>
+        Os cientistas da computação trabalham desde a criação de algoritmos e programas até a configuração e manutenção de sistemas complexos. Eles criam soluções para problemas do mundo real usando tecnologia e matemática, por exemplo, desenvolvimento de aplicativos, design de sistemas de banco de dados ou análise de big data. A pesquisa nessa área também inclui o estudo de linguagens de programação, redes de computadores, inteligência artificial e segurança cibernética.
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        A ciência da computação está em constante crescimento e expansão e, como resultado, oferece muitas oportunidades de carreira. Os profissionais em ciência da computação podem trabalhar em uma variedade de setores, desde empresas de tecnologia até agências governamentais. Além disso, a tecnologia da informação está sempre em alta demanda, oferecendo aos profissionais da área salários competitivos e excelente perspectivas de carreira.
     </p>
     <br>
 <h2>Faculdade</h2>
 
-    <p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <p>Existem varias Universidades em Minas Gerais que oferecem a área de programação e suas áreas, as principais são:
+        Universidade Federal de Minas Gerais (UFMG): oferece cursos de graduação em Ciência da Computação e Engenharia de Controle e Automação, além de programas de pós-graduação em áreas como Ciência da Computação, Engenharia Elétrica e Engenharia de Software.
+    <br>    
+        Universidade Federal de Viçosa (UFV): oferece cursos de graduação em Ciência da Computação, Engenharia de Computação e Sistemas de Informação, além de programas de pós-graduação em áreas como Ciência da Computação e Sistemas de Informação.
+    <br>   
+        Universidade Federal de Lavras (UFLA): oferece cursos de graduação em Ciência da Computação, Sistemas de Informação e Engenharia de Software, além de programas de pós-graduação em áreas como Ciência da Computação e Engenharia de Software.
+    <br>    
+        Pontifícia Universidade Católica de Minas Gerais (PUC-MG): oferece cursos de graduação em Ciência da Computação, Sistemas de Informação, Engenharia de Computação e Engenharia de Software, além de programas de pós-graduação em áreas como Ciência da Computação e Engenharia de Software.
+    <br>    
+        Universidade do Estado de Minas Gerais (UEMG): oferece cursos de graduação em Ciência da Computação e Sistemas de Informação, além de programas de pós-graduação em áreas como Ciência da Computação.
+    <br>    
+        Essas são apenas algumas das universidades em Minas Gerais que oferecem cursos na área de programação. É importante lembrar que outras instituições, como faculdades e institutos de tecnologia, também podem oferecer cursos nessa área.
     </p>
     <br>
 <h2>Cursos</h2>
@@ -44,6 +57,7 @@
     <br>
     </p>
     <br>
+    <canvas id="matrix"></canvas>
 <h3>Sistema operacional</h3>
 
     <p>
@@ -104,10 +118,6 @@
     <p>
         Assim como para a Ciência da Computação, o salário médio de um programador no Brasil pode variar dependendo de vários fatores, como a região do país, o nível de experiência e a empresa em que trabalha.
     <br>
-        De acordo com dados do site de empregos Catho, a média salarial nacional para um programador júnior (até 2 anos de experiência) é de aproximadamente R$ 2.500,00 a R$ 3.500,00 por mês. Já para programadores plenos, com cerca de 5 anos de experiência, a média salarial é de cerca de R$ 5.000,00 a R$ 7.000,00 por mês. Para programadores seniores, com mais de 10 anos de experiência, a média salarial pode chegar a cerca de R$ 10.000,00 a R$ 12.000,00 por mês.
-    <br>
-        É importante lembrar que esses valores são apenas uma média e podem variar bastante de acordo com as condições do mercado de trabalho em cada região do Brasil. Além disso, existem variações dependendo da linguagem de programação, setor de atuação e outros fatores específicos.
-    <br>
         A média salarial de um formado em Ciência da Computação no Brasil pode variar dependendo de vários fatores, como a região do país, o nível de experiência e a empresa em que trabalha.
     <br>
         De acordo com dados do site de empregos Catho, a média salarial nacional para um profissional de Ciência da Computação em início de carreira (até 2 anos de experiência) é de aproximadamente R$ 3.500,00 a R$ 4.000,00 por mês. Já para profissionais com mais de 10 anos de experiência, a média pode chegar a cerca de R$ 12.000,00 por mês.
@@ -120,5 +130,56 @@
     <br>
         No entanto, é importante lembrar que a taxa de contratação pode variar bastante de acordo com o momento econômico do país e do setor de atuação. Além disso, a competição no mercado de trabalho também pode ser influenciada pelo nível de qualificação dos profissionais e pela oferta de cursos e treinamentos específicos para determinadas áreas da informática.
     </p>
+    <script src="style.js">
+var canvas = document.getElementById('matrix');
+var ctx = canvas.getContext('2d');
+
+// ajustar o tamanho do canvas para cobrir a página inteira
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// caracteres de código binário para exibir
+var code = "01";
+code = code.split("");
+
+var font_size = 12;
+var columns = canvas.width / font_size; // número de colunas para o código chover
+var drops = [];
+
+// criando uma gota - um elemento - para cada coluna
+for (var x = 0; x < columns; x++)
+	drops[x] = 1;
+
+// desenhando o código
+function draw() {
+	// preenchendo a tela com uma cor de fundo
+	// translúcido para o efeito de rastro
+	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+	// definindo a cor do código
+	ctx.fillStyle = "#0F0"; // verde claro
+	ctx.font = font_size + "px arial";
+
+	// loop para cair gotas de código
+	for (var i = 0; i < drops.length; i++) {
+		// escolhendo um caractere aleatório
+		var text = code[Math.floor(Math.random() * code.length)];
+		
+		// desenhando o caractere na posição atual
+		ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+		// resetando a gota e criando uma nova
+		if (drops[i] * font_size > canvas.height && Math.random() > 0.975)
+			drops[i] = 0;
+
+		// aumentando a queda da gota
+		drops[i]++;
+	}
+}
+
+setInterval(draw, 33);
+
+    </script>
 </body>
 </html>
