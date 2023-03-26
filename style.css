@@ -3,38 +3,20 @@ h1,h2,h3,h4 {
   position: relative;
   color: red;
   font-size: 160%;
-  background-color:black;
   color:purple;
   margin-left:42%;
   margin-right:42%;
   padding: 40px;
+  background-color: rgba(000, 000, 000, 0.8);
 }
 
 p {
-  background-color:black;
   color:purple;
   margin-left:10%;
   margin-right:10%;
   padding: 40px;
   font-size: 140%;
-}
-
-h3 {
-  background-color:black;
-  color:purple;
-  margin-left:42%;
-  margin-right:42%;
-  padding: 40px;
-  font-size: 150%;
-}
-
-h2{
-  background-color:black;
-  color:purple;
-  margin-left:42%;
-  margin-right:42%;
-  padding: 40px;
-  font-size: 140%;
+  background-color: rgba(000, 000, 000, 0.8);
 }
 
 html,
@@ -48,7 +30,6 @@ body {
   padding: 0;
   color: rgb(153, 0, 255);
   font-family:'Public Sans', sans-serif;
-  background-color: rgba(, green, blue, alpha);
 }
 
 .title {
@@ -95,4 +76,32 @@ a{
     background: none;
     cursor: pointer;
     text-decoration: none;
+}
+
+.Windows {
+  width: 650;
+  height: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mac {
+  width: 400;
+  height: 350;
+  justify-content: center;
+  align-items: center;
+}
+
+.Linux{
+  width: 500;
+  height: 350;
+  justify-content: center;
+  align-items: center; 
+}
+
+.Android{
+  width: 400;
+  height: 400;
+  justify-content: center;
+  align-items: center;
 }
