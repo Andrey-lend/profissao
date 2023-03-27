@@ -1,13 +1,12 @@
 h1,h2,h3,h4 {
   text-align: center;
   position: relative;
-  color: red;
+  color: green;
   font-size: 160%;
-  color:purple;
   margin-left:42%;
   margin-right:42%;
   padding: 40px;
-  background-color: rgba(000, 000, 000, 0.8);
+  background-color: rgba(000, 000, 000, 0.5);
 }
 
 p {
@@ -16,7 +15,7 @@ p {
   margin-right:10%;
   padding: 40px;
   font-size: 140%;
-  background-color: rgba(000, 000, 000, 0.8);
+  background-color: rgba(000, 000, 000, 0.5);
 }
 
 html,
@@ -42,7 +41,7 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  animation: changeBackgroundImage 25s infinite;
+  animation: changeBackgroundImage 20s infinite;
   display: flex;
   align-items: center;
   text-align: justify;
@@ -56,17 +55,20 @@ body {
   0% {
     background-image: url('https://j.gifs.com/y0PeQ5.gif');
   }
-  25% {
+  20% {
     background-image: url('https://hips.hearstapps.com/digitalspyuk.cdnds.net/16/30/1469624095-nintendo-mario.gif?resize=980:*');
   }
-  50% {
+  40% {
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cd94ad62307169.5a8c3bfb3c6aa.gif');
   }
-  75% {
+  60% {
     background-image: url('https://i.pinimg.com/originals/51/41/b8/5141b83a8f9fe66e0cb8ad88ee1d18b5.gif');
   }
+  80% {
+    background-image: url('https://www.obilisk.co/wp-content/uploads/2017/06/1428677532-witcher-gif.gif');
+  }
   100% {
-    background-image: url('https://picsum.photos/id/1015/1500/1000');
+    background-image: url('https://www.conversadesofa.com/wp-content/uploads/2023/02/atomic-heart.gif');
   }
 }
 
@@ -81,27 +83,33 @@ a{
 .Windows {
   width: 650;
   height: 400;
-  justify-content: center;
-  align-items: center;
 }
 
 .Mac {
   width: 400;
   height: 350;
-  justify-content: center;
-  align-items: center;
 }
 
 .Linux{
   width: 500;
   height: 350;
-  justify-content: center;
-  align-items: center; 
 }
 
 .Android{
   width: 400;
   height: 400;
-  justify-content: center;
-  align-items: center;
+}
+
+.IA {
+  width: 600;
+  height: 350;
+}
+
+span{
+color: skyblue;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
 }
